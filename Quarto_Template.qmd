@@ -1,32 +1,34 @@
 ---
-title: Quarto reveal.js clean
-subtitle: A minimalist and elegant presentation theme
+title: Template!
+subtitle: And it looks pretty too...
 format:
   clean-revealjs:
     chalkboard: true
     drop: 
+      shortcut: "d"
+      button: false
       engine: webr #pyodide
       webr:
         packages:
           - tidyverse
+    header-logo-left: img/bsa_logo_2.png
+    header-logo-left-height: 2em
 
 revealjs-plugins:
   - drop
+  
 html-math-method:
   method: mathjax
   url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 author:
-  - name: Grant McDermott
-    orcid: 0000-0001-7883-8573
-    email: gmcd@amazon.com
-    affiliations: Amazon.com
-  - name: Kyle Butts
-    orcid: 0000-0002-9048-8059
-    email: kbutts@uark.edu
-    affiliations: U of Arkansas
+  - name: Kevin Baer
+    email: kevinbaer@ucla.edu
+    affiliations: Bruin Sports Analytics President
 date: last-modified
 bibliography: refs.bib
 progress: false
+filters:
+  - reveal-logo
 ---
 ## Example slide
 
@@ -40,8 +42,7 @@ in action.
 
 Next, we'll take a brief tour of some theme components.
 
-- We'll use the same basic
-structure as the
+- We'll use the same basic structure as the
 [original LaTeX slides](https://raw.githack.com/kylebutts/templates/master/latex-slides/auxiliary/slides.pdf).
 - Note that the [_full suite_](https://quarto.org/docs/presentations/revealjs/)
 of Reveal.js features are available for this Quarto implementation,
@@ -54,10 +55,7 @@ even if we don't cover everything here.
 
 The [clean theme](https://github.com/grantmcdermott/quarto-revealjs-clean) is
 language agnostic. Use it with R, Python, Julia, etc. Or none of the above.
-
-However, this demo uses R code to highlight advanced theme features.
-You'll need to install some software if you'd like to render the demo "as-is".
-
+  
 :::{.callout-warning}
 
 ## Required software (this demo only)
@@ -76,7 +74,6 @@ While reveal.js presentations are HTML format, we will show an example of how to
 embed LaTeX tables as images. This requires a working Tex distribution, of which
 TinyTex provides by far the easiest and lightest integration with Quarto. More
 details [here](https://quarto.org/docs/output-formats/pdf-engine.html).
-
 :::
 
 
@@ -452,7 +449,11 @@ quarto use template grantmcdermott/quarto-revealjs-clean
 quarto use template grantmcdermott/quarto-revealjs-clean-demo
 ```
 
+## Credits
 
+- Thanks to [Grant McDermott](https://github.com/grantmcdermott/quarto-revealjs-clean){target="_blank"} for the slide theme. 
+
+- Check out the GitHub repo to see all of the cool extensions used.
 
 ## References
 
