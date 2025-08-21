@@ -12,10 +12,15 @@ format:
         packages:
           - tidyverse
     header-logo-left: img/bsa_logo_2.png
-    header-logo-left-height: 2em
+    header-logo-left-height: 1.8em
 
 revealjs-plugins:
+  - editable
   - drop
+  
+filters:
+  - editable
+  - reveal-logo
   
 html-math-method:
   method: mathjax
@@ -27,8 +32,7 @@ author:
 date: last-modified
 bibliography: refs.bib
 progress: false
-filters:
-  - reveal-logo
+
 ---
 ## Example slide
 
@@ -180,19 +184,21 @@ span column in the same slide.
 :::: {.columns}
 
 ::: {.column width="50%"}
-![](img/kanagawa.jpg)
+![](img/kanagawa.jpg){.absolute width=727.806px height=450.47px left=3px top=145px}
 :::
 
 ::: {.column width="50%"}
-
+:::{.absolute width=378.669px height=471.732px left=707.593px top=167.765px style="font-size: 36px;"}
 - A [point]{.bg-purple} about the [figure]{.text-yellow} that is potentially important.
 - Another point about the figure that is also potentially important.
 :::
+:::
 
 ::::
-
+:::{.absolute width=1072.98px height=112.691px left=8px top=585.309px}
 Note that sub- and multi-panel figures are also natively supported by Quarto.
 See [here](https://quarto.org/docs/authoring/figures.html#subfigures).
+:::
 
 ## Components
 
@@ -349,7 +355,7 @@ etable(mods, highlight = .("se" = "complaints"), arraystretch = 1.5)
 
 ## Figure
 
-![](img/kanagawa.jpg)
+![](img/kanagawa.jpg){.absolute width=1030.92px height=496.314px left=10.9034px top=136.162px}
 
 ## Figure
 
